@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00000000, #1e293b);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 420px;
+  background: #000000;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.selects {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.selects select,
+.schedule input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: #fff;
+}
+
+.schedule {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.input-area {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 9px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover,
+button:active,
+button:focus-visible {
+  background: #3b82f6;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+#counter {
+  margin-top: 4px;
+}
+
+.filters button {
+  flex: 1;
+  background: #1f2937;
+}
+
+.filters button:hover,
+.filters button:active,
+.filters button:focus-visible {
+  background: #3b82f6;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: #121a28;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dragging {
+  opacity: 0.6;
+}
+
+.drag-over {
+  outline: 2px dashed #3b82f6;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.delete-btn:hover,
+.delete-btn:active,
+.delete-btn:focus-visible {
+  background: #dc2626;
+}
+
+body.light {
+  background: #f1f5f9;
+  color: #000;
+}
+
+body.light .container {
+  background: #fff;
+}
+
+body.light li {
+  background: #e2e8f0;
+}
+.alta {
+  border-left: 5px solid #ef4444;
+}
+
+.media {
+  border-left: 5px solid #f59e0b;
+}
+
+.baixa {
+  border-left: 5px solid #10b981;
+}
+li.dragging {
+  opacity: 0.5;
+}

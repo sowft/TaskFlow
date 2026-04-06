@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TaskFlow</h1>
+
+  <div class="selects">
+    <select id="category">
+      <option value="trabalho">Trabalho</option>
+      <option value="estudo">Estudo</option>
+      <option value="pessoal">Pessoal</option>
+    </select>
+
+    <select id="priority">
+      <option value="baixa">Baixa</option>
+      <option value="media">Média</option>
+      <option value="alta">Alta</option>
+    </select>
+  </div>
+
+  <div class="schedule">
+    <input type="date" id="dueDate">
+    <input type="time" id="dueTime">
+  </div>
+
+  <input type="text" id="search" placeholder="Buscar tarefa...">
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Nova tarefa...">
+      <button onclick="addTask()">Adicionar</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">Todas</button>
+      <button onclick="filterTasks('active')">Pendentes</button>
+      <button onclick="filterTasks('done')">Concluídas</button>
+    </div>
+
+    <p id="counter"></p>
+
+    <ul id="taskList"></ul>
+
+    <button onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
